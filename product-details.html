@@ -9,7 +9,7 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Osahan Deel - Coupons, Deals & Discounts HTML Template</title>
+    <title>Warchest - Trợ lý mua sắm online</title>
     <!-- Favicon Icon -->
     <link rel="icon" type="image/png" href="images/logo.svg" />
     <!-- Custom fonts for this template-->
@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="vendor/owl-carousel/owl.theme.css" />
     <!-- Custom styles for this template-->
     <link href="css/osahan.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
   </head>
 
   <body id="page-top">
@@ -55,8 +56,9 @@
             <a class="navbar-brand" href="index.html">
               <img class="img-fluid w-40" src="images/logo.svg" />
             </a>
+
             <button
-              class="navbar-toggler"
+              class="navbar-toggler collapsed"
               type="button"
               data-toggle="collapse"
               data-target="#navbarSupportedContent"
@@ -66,14 +68,16 @@
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <!-- Collapse navbar -->
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                   <a class="nav-link" href="#"><i class="fas fa-home"></i></a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link"
                     href="#"
                     id="navbarDropdown"
                     role="button"
@@ -81,23 +85,12 @@
                     aria-haspopup="true"
                     aria-expanded="false"
                   >
-                    <span>Coupans</span>
+                    <span>Trang chủ</span>
                   </a>
-                  <div
-                    class="dropdown-menu shadow-sm animated--grow-in border-0"
-                    aria-labelledby="navbarDropdown"
-                  >
-                    <div class="bg-white py-2 collapse-inner rounded">
-                      <a class="dropdown-item" href="coupans.html">Coupans</a>
-                      <a class="dropdown-item" href="coupan-details.html"
-                        >Coupan Details</a
-                      >
-                    </div>
-                  </div>
                 </li>
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link"
                     href="#"
                     id="navbarDropdown"
                     role="button"
@@ -105,23 +98,12 @@
                     aria-haspopup="true"
                     aria-expanded="false"
                   >
-                    <span>Offers</span>
+                    <span>Sản phẩm của tôi</span>
                   </a>
-                  <div
-                    class="dropdown-menu shadow-sm animated--grow-in border-0"
-                    aria-labelledby="navbarDropdown"
-                  >
-                    <div class="bg-white py-2 collapse-inner rounded">
-                      <a class="dropdown-item" href="offers.html">Offers</a>
-                      <a class="dropdown-item" href="offer-details.html"
-                        >Offers Details</a
-                      >
-                    </div>
-                  </div>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link"
                     href="#"
                     id="navbarDropdown"
                     role="button"
@@ -129,1636 +111,253 @@
                     aria-haspopup="true"
                     aria-expanded="false"
                   >
-                    <span>Stores</span>
+                    <span>Giới thiệu</span>
                   </a>
-                  <div
-                    class="dropdown-menu shadow-sm animated--grow-in border-0"
-                    aria-labelledby="navbarDropdown"
-                  >
-                    <div class="bg-white py-2 collapse-inner rounded">
-                      <a class="dropdown-item" href="stores.html">Stores</a>
-                      <a class="dropdown-item" href="store-details.html"
-                        >Stores Details</a
-                      >
-                    </div>
-                  </div>
                 </li>
-                <li class="nav-item dropdown">
+              </ul>
+
+              <ul class="navbar-nav ml-auto flex-direction-row">
+                <div class="topbar-divider d-none d-sm-block"></div>
+                <!-- Nav Item - User Information -->
+                <li class="nav-item">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link pr-0"
                     href="#"
-                    id="navbarDropdown"
+                    id="userDropdown"
                     role="button"
                     data-toggle="dropdown"
                     aria-haspopup="true"
                     aria-expanded="false"
                   >
-                    <span>Restaurant</span>
+                    <span class="mr-2 d-none d-lg-inline text-gray-600 small"
+                      >Yen Mai</span
+                    >
+                    <img
+                      class="img-profile rounded-circle"
+                      src="images/user/yen.jpg"
+                    />
                   </a>
-                  <div
-                    class="dropdown-menu shadow-sm animated--grow-in border-0"
-                    aria-labelledby="navbarDropdown"
-                  >
-                    <div class="bg-white py-2 collapse-inner rounded">
-                      <a class="dropdown-item" href="restaurant.html"
-                        >Restaurant</a
-                      >
-                      <a class="dropdown-item" href="restaurant-details.html"
-                        >Restaurant Details</a
-                      >
-                    </div>
-                  </div>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    <span>Account Pages</span>
-                  </a>
-                  <div
-                    class="dropdown-menu shadow-sm animated--grow-in border-0"
-                    aria-labelledby="navbarDropdown"
-                  >
-                    <div class="bg-white py-2 collapse-inner rounded">
-                      <h6 class="dropdown-header">Login Screens</h6>
-                      <a class="dropdown-item" href="profile.html">Profile</a>
-                      <a class="dropdown-item" href="enter-otp.html"
-                        >Enter OTP</a
-                      >
-                      <a class="dropdown-item" href="sign-in.html">Sign In</a>
-                      <a class="dropdown-item" href="sign-up.html">Sign up</a>
-                      <div class="dropdown-divider"></div>
-                      <h6 class="dropdown-header">Account</h6>
-                      <a class="dropdown-item" href="earn.html">Earn</a>
-                      <a class="dropdown-item" href="membership.html"
-                        >Membership</a
-                      >
-                      <a class="dropdown-item" href="rating.html">Rating</a>
-                      <a class="dropdown-item" href="referral.html">Referral</a>
-                      <div class="dropdown-divider"></div>
-                      <h6 class="dropdown-header">Companyd</h6>
-                      <a class="dropdown-item" href="not-found.html"
-                        >404 Not Found</a
-                      >
-                      <a class="dropdown-item" href="faq.html">FAQ</a>
-                      <a class="dropdown-item" href="terms.html">Terms</a>
-                      <a class="dropdown-item" href="privacy.html">Privacy</a>
-                      <a class="dropdown-item" href="contact.html">Contact</a>
-                      <a class="dropdown-item" href="pricing.html">Pricing</a>
-                      <a class="dropdown-item" href="maintence.html"
-                        >Maintence</a
-                      >
-                      <a class="dropdown-item" href="coming-soon.html"
-                        >Coming Soon</a
-                      >
-                      <a class="dropdown-item" href="components.html"
-                        >Components</a
-                      >
-                    </div>
-                  </div>
                 </li>
               </ul>
             </div>
+            <!-- End collapse navbar -->
+
             <!-- Topbar Navbar -->
-            <ul class="navbar-nav ml-auto flex-direction-row">
-              <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-              <li class="nav-item dropdown no-arrow d-sm-none">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="searchDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <i class="fas fa-search fa-fw"></i>
-                </a>
-                <!-- Dropdown - Messages -->
-                <div
-                  class="dropdown-menu dropdown-menu-right p-3 shadow-sm border-0 animated--grow-in"
-                  aria-labelledby="searchDropdown"
-                >
-                  <form class="form-inline mr-auto w-100 navbar-search">
-                    <div class="input-group">
-                      <input
-                        type="text"
-                        class="form-control bg-light border-0 small"
-                        placeholder="Search for..."
-                        aria-label="Search"
-                        aria-describedby="basic-addon2"
-                      />
-                      <div class="input-group-append">
-                        <button class="btn btn-primary" type="button">
-                          <i class="fas fa-search fa-sm"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </li>
-              <!-- Nav Item - Alerts -->
-              <li class="nav-item dropdown no-arrow mx-1">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="alertsDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <i class="fas fa-bell fa-fw"></i>
-                  <!-- Counter - Alerts -->
-                  <span class="badge badge-danger badge-counter">3</span>
-                </a>
-                <!-- Dropdown - Alerts -->
-                <div
-                  class="dropdown-list dropdown-menu dropdown-menu-right border-0 shadow-sm animated--grow-in"
-                  aria-labelledby="alertsDropdown"
-                >
-                  <h6 class="dropdown-header">
-                    Alerts Center
-                  </h6>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="mr-3">
-                      <div class="icon-circle bg-primary">
-                        <i class="fas fa-file-alt text-white"></i>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="small text-gray-500-500">
-                        December 12, 2019
-                      </div>
-                      <span class="font-weight-bold"
-                        >A new monthly report is ready to download!</span
-                      >
-                    </div>
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="mr-3">
-                      <div class="icon-circle bg-success">
-                        <i class="fas fa-donate text-white"></i>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="small text-gray-500-500">
-                        December 7, 2019
-                      </div>
-                      $290.29 has been deposited into your account!
-                    </div>
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="mr-3">
-                      <div class="icon-circle bg-warning">
-                        <i class="fas fa-exclamation-triangle text-white"></i>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="small text-gray-500-500">
-                        December 2, 2019
-                      </div>
-                      Spending Alert: We've noticed unusually high spending for
-                      your account.
-                    </div>
-                  </a>
-                  <a
-                    class="dropdown-item text-center small text-gray-500-500"
-                    href="#"
-                    >Show All Alerts</a
-                  >
-                </div>
-              </li>
-              <!-- Nav Item - Messages -->
-              <li class="nav-item dropdown no-arrow mx-1">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="messagesDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <i class="fas fa-envelope fa-fw"></i>
-                  <!-- Counter - Messages -->
-                  <span class="badge badge-danger badge-counter">7</span>
-                </a>
-                <!-- Dropdown - Messages -->
-                <div
-                  class="dropdown-list dropdown-menu dropdown-menu-right border-0 shadow-sm animated--grow-in"
-                  aria-labelledby="messagesDropdown"
-                >
-                  <h6 class="dropdown-header">
-                    Message Center
-                  </h6>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="dropdown-list-image mr-3">
-                      <img
-                        class="rounded-circle"
-                        src="images/user/4.png"
-                        alt=""
-                      />
-                      <div class="status-indicator bg-success"></div>
-                    </div>
-                    <div class="font-weight-bold">
-                      <div class="text-truncate">
-                        Hi there! I am wondering if you can help me with a
-                        problem I've been having.
-                      </div>
-                      <div class="small text-gray-500-500">
-                        Emily Fowler · 58m
-                      </div>
-                    </div>
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="dropdown-list-image mr-3">
-                      <img
-                        class="rounded-circle"
-                        src="images/user/3.png"
-                        alt=""
-                      />
-                      <div class="status-indicator"></div>
-                    </div>
-                    <div>
-                      <div class="text-truncate">
-                        I have the photos that you ordered last month, how would
-                        you like them sent to you?
-                      </div>
-                      <div class="small text-gray-500-500">Jae Chun · 1d</div>
-                    </div>
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="dropdown-list-image mr-3">
-                      <img
-                        class="rounded-circle"
-                        src="images/user/2.png"
-                        alt=""
-                      />
-                      <div class="status-indicator bg-warning"></div>
-                    </div>
-                    <div>
-                      <div class="text-truncate">
-                        Last month's report looks great, I am very happy with
-                        the progress so far, keep up the good work!
-                      </div>
-                      <div class="small text-gray-500-500">
-                        Morgan Alvarez · 2d
-                      </div>
-                    </div>
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <div class="dropdown-list-image mr-3">
-                      <img
-                        class="rounded-circle"
-                        src="images/user/1.png"
-                        alt=""
-                      />
-                      <div class="status-indicator bg-success"></div>
-                    </div>
-                    <div>
-                      <div class="text-truncate">
-                        Am I a good boy? The reason I ask is because someone
-                        told me that people say this to all dogs, even if they
-                        aren't good...
-                      </div>
-                      <div class="small text-gray-500-500">
-                        Chicken the Dog · 2w
-                      </div>
-                    </div>
-                  </a>
-                  <a
-                    class="dropdown-item text-center small text-gray-500-500"
-                    href="#"
-                    >Read More Messages</a
-                  >
-                </div>
-              </li>
-              <div class="topbar-divider d-none d-sm-block"></div>
-              <!-- Nav Item - User Information -->
-              <li class="nav-item dropdown no-arrow">
-                <a
-                  class="nav-link dropdown-toggle pr-0"
-                  href="#"
-                  id="userDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <span class="mr-2 d-none d-lg-inline text-gray-600 small"
-                    >Valerie Luna</span
-                  >
-                  <img
-                    class="img-profile rounded-circle"
-                    src="images/user-icon/user.png"
-                  />
-                </a>
-                <!-- Dropdown - User Information -->
-                <div
-                  class="dropdown-menu dropdown-menu-right shadow-sm border-0 animated--grow-in"
-                  aria-labelledby="userDropdown"
-                >
-                  <a class="dropdown-item" href="profile.html">
-                    <i
-                      class="fas fa-user fa-sm fa-fw mr-2 text-gray-500-400"
-                    ></i>
-                    Profile
-                  </a>
-                  <a class="dropdown-item" href="settings.html">
-                    <i
-                      class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-500-400"
-                    ></i>
-                    Settings
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <i
-                      class="fas fa-list fa-sm fa-fw mr-2 text-gray-500-400"
-                    ></i>
-                    Activity Log
-                  </a>
-                  <div class="dropdown-divider"></div>
-                  <a
-                    class="dropdown-item"
-                    href="#"
-                    data-toggle="modal"
-                    data-target="#logoutModal"
-                  >
-                    <i
-                      class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-500-400"
-                    ></i>
-                    Logout
-                  </a>
-                </div>
-              </li>
-            </ul>
           </nav>
 
           <!-- End of Topbar -->
           <!-- Begin Page Content -->
           <section class="offer-dedicated-body section-padding">
             <div class="container">
-              <div class="row pt-lg-4">
-                <div class="offset-md-1 col-md-10 col-sm-12">
-                  <div class="offer-dedicated-body-left">
-                    <div class="shadow-sm rounded overflow-hidden mb-4">
-                      <div class="bg-white coupon-deal-detail-main">
-                        <div class="coupon-deal-detail-main-block">
+              <!-- Begin product infomation -->
+              <div class="row">
+                <div class="col-12">
+                  <div class="shadow-sm rounded overflow-hidden mb-4">
+                    <div class="bg-white coupon-deal-detail-main d-flex">
+                      <div class="coupon-deal-detail-main-block">
+                        <img
+                          class="img-fluid coupon-deal-detail-main-img"
+                          src="https://cf.shopee.vn/file/d3d7b302a9b4b7b492617be983f74f69"
+                        />
+                        <div class="got-badge">
                           <img
-                            class="img-fluid coupon-deal-detail-main-img"
-                            src="https://cf.shopee.vn/file/d3d7b302a9b4b7b492617be983f74f69"
+                            class="user-cou-img"
+                            src="https://1ty.vn/datafiles/3/2019-05-16/64184445-shopee-logo.png"
+                            alt="Generic placeholder image"
                           />
-                          <div class="got-badge">
-                            <img
-                              class="user-cou-img"
-                              src="https://1ty.vn/datafiles/3/2019-05-16/64184445-shopee-logo.png"
-                              alt="Generic placeholder image"
-                            />
-                          </div>
-                        </div>
-                        <div class="coupon-deal-detail-main-body p-4">
-                          <h3 class="col-md-11 pr-lg-5 mb-3 text-gray-900">
-                            Giày sneaker nữ 💖FREESHIP💖 [GIAY NU] Giày thể thao
-                            nữ CV cổ thấp<span class="badge badge-danger ml-2"
-                              >70% Success
-                            </span>
-                          </h3>
-                          <h6
-                            class="coupon-deal-detail-main-body-p font-weight-light pr-lg-5 text-secondary"
-                          >
-                            Amazon Promo Code - Collect Coupons and Save Upto
-                            50% on Fashion, Electronics, Home &amp; more
-                          </h6>
                         </div>
                       </div>
-                      <div
-                        class="custom-nav coupon-deal-detail-main-footer bg-white border-top d-flex align-items-center px-4"
-                      >
-                        <p class="mb-3 mt-3 font-weight-light text-gray-500">
-                          <i class="icofont-users-alt-4 text-danger mr-2"></i>
-                          307 People Used Today
-                          <i
-                            class="ml-4 icofont-clock-time text-danger mr-2"
-                          ></i>
-                          Ends 09.15.2020
-                        </p>
-                        <span class="ml-auto">
-                          <button
-                            type="button"
-                            class="btn btn-primary btn-sm shadow-sm"
-                          >
-                            Get Deal
-                          </button>
-                        </span>
-                      </div>
-                    </div>
-                    <div id="" class="bg-white shadow-sm rounded mb-4">
-                      <h5 class="mb-4 pt-4 pl-4 pr-4 text-gray-900">
-                        Lịch sử giá
-                      </h5>
-                      <div class="" id="">
-                        <div class="popular-stores-card">
-                          <div
-                            data-v-893d0688=""
-                            class="chart offset-md-1"
-                            data-highcharts-chart="1"
-                            style="overflow: hidden;"
-                          >
-                            <div
-                              id="highcharts-f3vaflu-22"
-                              dir="ltr"
-                              class="highcharts-container"
-                              style="
-                                position: relative;
-                                overflow: hidden;
-                                width: 730px;
-                                height: 300px;
-                                text-align: left;
-                                line-height: normal;
-                                z-index: 0;
-                                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-                              "
-                            >
-                              <svg
-                                version="1.1"
-                                class="highcharts-root"
-                                style="
-                                  font-family: 'Lucida Grande',
-                                    'Lucida Sans Unicode', Arial, Helvetica,
-                                    sans-serif;
-                                  font-size: 12px;
-                                "
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="730"
-                                height="300"
-                                viewBox="0 0 730 300"
-                              >
-                                <desc>Created with Highcharts 7.2.0</desc>
-                                <defs>
-                                  <clipPath id="highcharts-f3vaflu-23-">
-                                    <rect
-                                      x="0"
-                                      y="0"
-                                      width="667"
-                                      height="209"
-                                      fill="none"
-                                    ></rect>
-                                  </clipPath>
-                                </defs>
-                                <rect
-                                  fill="#ffffff"
-                                  class="highcharts-background"
-                                  x="0"
-                                  y="0"
-                                  width="730"
-                                  height="300"
-                                  rx="0"
-                                  ry="0"
-                                ></rect>
-                                <rect
-                                  fill="none"
-                                  class="highcharts-plot-background"
-                                  x="53"
-                                  y="10"
-                                  width="667"
-                                  height="209"
-                                ></rect>
-                                <g
-                                  class="highcharts-grid highcharts-xaxis-grid"
-                                  data-z-index="1"
-                                >
-                                  <path
-                                    fill="none"
-                                    data-z-index="1"
-                                    class="highcharts-grid-line"
-                                    d="M 89.5 10 L 89.5 219"
-                                    opacity="1"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    data-z-index="1"
-                                    class="highcharts-grid-line"
-                                    d="M 126.5 10 L 126.5 219"
-                                    opacity="1"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    data-z-index="1"
-                                    class="highcharts-grid-line"
-                                    d="M 163.5 10 L 163.5 219"
-                                    opacity="1"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    data-z-index="1"
-                                    class="highcharts-grid-line"
-                                    d="M 200.5 10 L 200.5 219"
-                                    opacity="1"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    data-z-index="1"
-                                    class="highcharts-grid-line"
-                                    d="M 237.5 10 L 237.5 219"
-                                    opacity="1"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    data-z-index="1"
-                                    class="highcharts-grid-line"
-                                    d="M 274.5 10 L 274.5 219"
-                                    opacity="1"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    data-z-index="1"
-                                    class="highcharts-grid-line"
-                                    d="M 311.5 10 L 311.5 219"
-                                    opacity="1"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    data-z-index="1"
-                                    class="highcharts-grid-line"
-                                    d="M 348.5 10 L 348.5 219"
-                                    opacity="1"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    data-z-index="1"
-                                    class="highcharts-grid-line"
-                                    d="M 386.5 10 L 386.5 219"
-                                    opacity="1"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    data-z-index="1"
-                                    class="highcharts-grid-line"
-                                    d="M 423.5 10 L 423.5 219"
-                                    opacity="1"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    data-z-index="1"
-                                    class="highcharts-grid-line"
-                                    d="M 460.5 10 L 460.5 219"
-                                    opacity="1"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    data-z-index="1"
-                                    class="highcharts-grid-line"
-                                    d="M 497.5 10 L 497.5 219"
-                                    opacity="1"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    data-z-index="1"
-                                    class="highcharts-grid-line"
-                                    d="M 534.5 10 L 534.5 219"
-                                    opacity="1"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    data-z-index="1"
-                                    class="highcharts-grid-line"
-                                    d="M 571.5 10 L 571.5 219"
-                                    opacity="1"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    data-z-index="1"
-                                    class="highcharts-grid-line"
-                                    d="M 608.5 10 L 608.5 219"
-                                    opacity="1"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    data-z-index="1"
-                                    class="highcharts-grid-line"
-                                    d="M 645.5 10 L 645.5 219"
-                                    opacity="1"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    data-z-index="1"
-                                    class="highcharts-grid-line"
-                                    d="M 682.5 10 L 682.5 219"
-                                    opacity="1"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    data-z-index="1"
-                                    class="highcharts-grid-line"
-                                    d="M 719.5 10 L 719.5 219"
-                                    opacity="1"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    data-z-index="1"
-                                    class="highcharts-grid-line"
-                                    d="M 52.5 10 L 52.5 219"
-                                    opacity="1"
-                                  ></path>
-                                </g>
-                                <g
-                                  class="highcharts-grid highcharts-yaxis-grid"
-                                  data-z-index="1"
-                                >
-                                  <path
-                                    fill="none"
-                                    stroke="#e6e6e6"
-                                    stroke-width="1"
-                                    data-z-index="1"
-                                    class="highcharts-grid-line"
-                                    d="M 53 219.5 L 720 219.5"
-                                    opacity="1"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    stroke="#e6e6e6"
-                                    stroke-width="1"
-                                    data-z-index="1"
-                                    class="highcharts-grid-line"
-                                    d="M 53 177.5 L 720 177.5"
-                                    opacity="1"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    stroke="#e6e6e6"
-                                    stroke-width="1"
-                                    data-z-index="1"
-                                    class="highcharts-grid-line"
-                                    d="M 53 135.5 L 720 135.5"
-                                    opacity="1"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    stroke="#e6e6e6"
-                                    stroke-width="1"
-                                    data-z-index="1"
-                                    class="highcharts-grid-line"
-                                    d="M 53 94.5 L 720 94.5"
-                                    opacity="1"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    stroke="#e6e6e6"
-                                    stroke-width="1"
-                                    data-z-index="1"
-                                    class="highcharts-grid-line"
-                                    d="M 53 52.5 L 720 52.5"
-                                    opacity="1"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    stroke="#e6e6e6"
-                                    stroke-width="1"
-                                    data-z-index="1"
-                                    class="highcharts-grid-line"
-                                    d="M 53 9.5 L 720 9.5"
-                                    opacity="1"
-                                  ></path>
-                                </g>
-                                <rect
-                                  fill="none"
-                                  class="highcharts-plot-border"
-                                  data-z-index="1"
-                                  x="53"
-                                  y="10"
-                                  width="667"
-                                  height="209"
-                                ></rect>
-                                <g
-                                  class="highcharts-axis highcharts-xaxis"
-                                  data-z-index="2"
-                                >
-                                  <path
-                                    fill="none"
-                                    class="highcharts-axis-line"
-                                    stroke="#ccd6eb"
-                                    stroke-width="1"
-                                    data-z-index="7"
-                                    d="M 53 219.5 L 720 219.5"
-                                  ></path>
-                                </g>
-                                <g
-                                  class="highcharts-axis highcharts-yaxis"
-                                  data-z-index="2"
-                                >
-                                  <path
-                                    fill="none"
-                                    class="highcharts-axis-line"
-                                    data-z-index="7"
-                                    d="M 53 10 L 53 219"
-                                  ></path>
-                                </g>
-                                <g
-                                  class="highcharts-series-group"
-                                  data-z-index="3"
-                                >
-                                  <g
-                                    data-z-index="0.1"
-                                    class="highcharts-series highcharts-series-0 highcharts-spline-series highcharts-color-0 highcharts-series-hover"
-                                    transform="translate(53,10) scale(1 1)"
-                                    clip-path="url(#highcharts-f3vaflu-23-)"
-                                  >
-                                    <path
-                                      fill="none"
-                                      d="M 18.527777777778 68.55199999999999 C 18.527777777778 68.55199999999999 40.761111111111 68.55199999999999 55.583333333333 68.55199999999999 C 70.40555555555541 68.55199999999999 77.81666666666659 68.55199999999999 92.638888888889 68.55199999999999 C 107.4611111111094 68.55199999999999 114.87222222221958 85.27199999999999 129.69444444444 85.27199999999999 C 144.51666666666398 85.27199999999999 151.92777777777602 85.27199999999999 166.75 85.27199999999999 C 181.57222222222398 85.27199999999999 188.98333333333602 85.27199999999999 203.80555555556 85.27199999999999 C 218.62777777778 85.27199999999999 226.03888888889 85.27199999999999 240.86111111111 85.27199999999999 C 255.68333333333402 85.27199999999999 263.09444444444597 85.27199999999999 277.91666666667 85.27199999999999 C 292.73888888889 85.27199999999999 300.15 85.27199999999999 314.97222222222 85.27199999999999 C 329.79444444444397 85.27199999999999 337.205555555556 85.27199999999999 352.02777777778 85.27199999999999 C 366.85 85.27199999999999 374.26111111111 96.976 389.08333333333 96.976 C 403.90555555555403 96.976 411.316666666666 96.976 426.13888888889 96.976 C 440.96111111111003 96.976 448.37222222222 96.976 463.19444444444 96.976 C 478.01666666666404 96.976 485.427777777776 96.976 500.25 96.976 C 515.072222222224 96.976 522.483333333336 96.976 537.30555555556 96.976 C 552.1277777777799 96.976 559.5388888888899 108.67999999999999 574.36111111111 108.67999999999999 C 589.183333333334 108.67999999999999 596.594444444446 96.976 611.41666666667 96.976 C 626.23888888889 96.976 648.47222222222 96.976 648.47222222222 96.976"
-                                      class="highcharts-graph"
-                                      data-z-index="1"
-                                      stroke="#ffbb97"
-                                      stroke-width="3"
-                                      stroke-linejoin="round"
-                                      stroke-linecap="round"
-                                    ></path>
-                                    <path
-                                      fill="none"
-                                      d="M 8.527777777777999 68.55199999999999 L 18.527777777778 68.55199999999999 C 18.527777777778 68.55199999999999 40.761111111111 68.55199999999999 55.583333333333 68.55199999999999 C 70.40555555555541 68.55199999999999 77.81666666666659 68.55199999999999 92.638888888889 68.55199999999999 C 107.4611111111094 68.55199999999999 114.87222222221958 85.27199999999999 129.69444444444 85.27199999999999 C 144.51666666666398 85.27199999999999 151.92777777777602 85.27199999999999 166.75 85.27199999999999 C 181.57222222222398 85.27199999999999 188.98333333333602 85.27199999999999 203.80555555556 85.27199999999999 C 218.62777777778 85.27199999999999 226.03888888889 85.27199999999999 240.86111111111 85.27199999999999 C 255.68333333333402 85.27199999999999 263.09444444444597 85.27199999999999 277.91666666667 85.27199999999999 C 292.73888888889 85.27199999999999 300.15 85.27199999999999 314.97222222222 85.27199999999999 C 329.79444444444397 85.27199999999999 337.205555555556 85.27199999999999 352.02777777778 85.27199999999999 C 366.85 85.27199999999999 374.26111111111 96.976 389.08333333333 96.976 C 403.90555555555403 96.976 411.316666666666 96.976 426.13888888889 96.976 C 440.96111111111003 96.976 448.37222222222 96.976 463.19444444444 96.976 C 478.01666666666404 96.976 485.427777777776 96.976 500.25 96.976 C 515.072222222224 96.976 522.483333333336 96.976 537.30555555556 96.976 C 552.1277777777799 96.976 559.5388888888899 108.67999999999999 574.36111111111 108.67999999999999 C 589.183333333334 108.67999999999999 596.594444444446 96.976 611.41666666667 96.976 C 626.23888888889 96.976 648.47222222222 96.976 648.47222222222 96.976 L 658.47222222222 96.976"
-                                      visibility="visible"
-                                      data-z-index="2"
-                                      class="highcharts-tracker-line"
-                                      stroke-linejoin="round"
-                                      stroke="rgba(192,192,192,0.0001)"
-                                      stroke-width="22"
-                                    ></path>
-                                  </g>
-                                  <g
-                                    data-z-index="0.1"
-                                    class="highcharts-markers highcharts-series-0 highcharts-spline-series highcharts-color-0 highcharts-tracker highcharts-series-hover"
-                                    transform="translate(53,10) scale(1 1)"
-                                  >
-                                    <path
-                                      fill="#ffbb97"
-                                      d="M 389 106.976 A 10 10 0 1 1 389.00999999833334 106.97599500000041 Z"
-                                      class="highcharts-halo highcharts-color-0"
-                                      data-z-index="-1"
-                                      fill-opacity="0.25"
-                                    ></path>
-                                    <path
-                                      fill="#ffbb97"
-                                      d="M 18 72.55199999999999 A 4 4 0 1 1 18.003999999333335 72.55199800000015 Z"
-                                      opacity="1"
-                                      class="highcharts-point highcharts-color-0"
-                                      stroke-width="0.00001258092183463455"
-                                    ></path>
-                                    <path
-                                      fill="#ffbb97"
-                                      d="M 55 72.55199999999999 A 4 4 0 1 1 55.00399999933334 72.55199800000015 Z"
-                                      opacity="1"
-                                      class="highcharts-point highcharts-color-0"
-                                    ></path>
-                                    <path
-                                      fill="#ffbb97"
-                                      d="M 92 72.55199999999999 A 4 4 0 1 1 92.00399999933333 72.55199800000015 Z"
-                                      opacity="1"
-                                      class="highcharts-point highcharts-color-0"
-                                      stroke-width="7.866569343446123e-7"
-                                    ></path>
-                                    <path
-                                      fill="#ffbb97"
-                                      d="M 129 89.27199999999999 A 4 4 0 1 1 129.00399999933333 89.27199800000015 Z"
-                                      opacity="1"
-                                      class="highcharts-point highcharts-color-0"
-                                      stroke-width="0.000009869571931497845"
-                                    ></path>
-                                    <path
-                                      fill="#ffbb97"
-                                      d="M 165.999310520123 91.26561131052 A 5.993611310520008 5.993611310520008 0 1 1 166.00530413043458 91.2656083137146 Z"
-                                      opacity="1"
-                                      class="highcharts-point highcharts-color-0"
-                                      stroke-width="0.9971503951984995"
-                                      stroke="#ffffff"
-                                    ></path>
-                                    <path
-                                      fill="#ffbb97"
-                                      d="M 203 89.27199999999999 A 4 4 0 1 1 203.00399999933333 89.27199800000015 Z"
-                                      opacity="1"
-                                      class="highcharts-point highcharts-color-0"
-                                    ></path>
-                                    <path
-                                      fill="#ffbb97"
-                                      d="M 240 89.27199999999999 A 4 4 0 1 1 240.00399999933333 89.27199800000015 Z"
-                                      opacity="1"
-                                      class="highcharts-point highcharts-color-0"
-                                      stroke-width="0.000044411904797758694"
-                                    ></path>
-                                    <path
-                                      fill="#ffbb97"
-                                      d="M 277 89.27199999999999 A 4 4 0 1 1 277.00399999933336 89.27199800000015 Z"
-                                      opacity="1"
-                                      class="highcharts-point highcharts-color-0"
-                                      stroke-width="0.0006315216969912107"
-                                    ></path>
-                                    <path
-                                      fill="#ffbb97"
-                                      d="M 314 89.27199999999999 A 4 4 0 1 1 314.00399999933336 89.27199800000015 Z"
-                                      opacity="1"
-                                      class="highcharts-point highcharts-color-0"
-                                    ></path>
-                                    <path
-                                      fill="#ffbb97"
-                                      d="M 352 89.27199999999999 A 4 4 0 1 1 352.00399999933336 89.27199800000015 Z"
-                                      opacity="1"
-                                      class="highcharts-point highcharts-color-0"
-                                    ></path>
-                                    <path
-                                      fill="#ffbb97"
-                                      d="M 388.94402561746335 101.55022070843492 A 4.518246325898285 4.574220708434927 0 1 1 388.9485438630362 101.55021842132476 Z"
-                                      opacity="1"
-                                      class="highcharts-point highcharts-color-0 highcharts-point-hover"
-                                      stroke="#ffffff"
-                                      stroke-width="0.28711035421746367"
-                                    ></path>
-                                    <path
-                                      fill="#ffbb97"
-                                      d="M 426 100.976 A 4 4 0 1 1 426.00399999933336 100.97599800000016 Z"
-                                      opacity="1"
-                                      class="highcharts-point highcharts-color-0"
-                                    ></path>
-                                    <path
-                                      fill="#ffbb97"
-                                      d="M 463 100.976 A 4 4 0 1 1 463.00399999933336 100.97599800000016 Z"
-                                      opacity="1"
-                                      class="highcharts-point highcharts-color-0"
-                                    ></path>
-                                    <path
-                                      fill="#ffbb97"
-                                      d="M 500 100.976 A 4 4 0 1 1 500.00399999933336 100.97599800000016 Z"
-                                      opacity="1"
-                                      class="highcharts-point highcharts-color-0"
-                                    ></path>
-                                    <path
-                                      fill="#ffbb97"
-                                      d="M 537 100.976 A 4 4 0 1 1 537.0039999993334 100.97599800000016 Z"
-                                      opacity="1"
-                                      class="highcharts-point highcharts-color-0"
-                                    ></path>
-                                    <path
-                                      fill="#ffbb97"
-                                      d="M 574 112.67999999999999 A 4 4 0 1 1 574.0039999993334 112.67999800000015 Z"
-                                      opacity="1"
-                                      class="highcharts-point highcharts-color-0"
-                                    ></path>
-                                    <path
-                                      fill="#ffbb97"
-                                      d="M 611 100.976 A 4 4 0 1 1 611.0039999993334 100.97599800000016 Z"
-                                      opacity="1"
-                                      class="highcharts-point highcharts-color-0"
-                                    ></path>
-                                    <path
-                                      fill="#ffbb97"
-                                      d="M 648 100.976 A 4 4 0 1 1 648.0039999993334 100.97599800000016 Z"
-                                      opacity="1"
-                                      class="highcharts-point highcharts-color-0"
-                                    ></path>
-                                  </g>
-                                </g>
-                                <text
-                                  x="365"
-                                  text-anchor="middle"
-                                  class="highcharts-title"
-                                  data-z-index="4"
-                                  style="
-                                    color: #333333;
-                                    font-size: 18px;
-                                    fill: #333333;
-                                  "
-                                  y="24"
-                                ></text>
-                                <text
-                                  x="365"
-                                  text-anchor="middle"
-                                  class="highcharts-subtitle"
-                                  data-z-index="4"
-                                  style="color: #666666; fill: #666666;"
-                                  y="24"
-                                ></text>
-                                <text
-                                  x="10"
-                                  text-anchor="start"
-                                  class="highcharts-caption"
-                                  data-z-index="4"
-                                  style="color: #666666; fill: #666666;"
-                                  y="297"
-                                ></text>
-                                <g
-                                  class="highcharts-axis-labels highcharts-xaxis-labels"
-                                  data-z-index="7"
-                                >
-                                  <text
-                                    x="74.12050264212888"
-                                    style="
-                                      color: #666666;
-                                      cursor: default;
-                                      font-size: 11px;
-                                      fill: #666666;
-                                    "
-                                    text-anchor="end"
-                                    transform="translate(0,0) rotate(-45 74.12050264212888 235)"
-                                    y="235"
-                                    opacity="1"
-                                  >
-                                    17-07-2019
-                                  </text>
-                                  <text
-                                    x="0"
-                                    style="
-                                      color: #666666;
-                                      cursor: default;
-                                      font-size: 11px;
-                                      fill: #666666;
-                                    "
-                                    text-anchor="end"
-                                    transform="translate(0,0) rotate(-45 0 -9999)"
-                                    y="-9999"
-                                  >
-                                    31-07-2019
-                                  </text>
-                                  <text
-                                    x="0"
-                                    style="
-                                      color: #666666;
-                                      cursor: default;
-                                      font-size: 11px;
-                                      fill: #666666;
-                                    "
-                                    text-anchor="end"
-                                    transform="translate(0,0) rotate(-45 0 -9999)"
-                                    y="-9999"
-                                  >
-                                    09-08-2019
-                                  </text>
-                                  <text
-                                    x="0"
-                                    style="
-                                      color: #666666;
-                                      cursor: default;
-                                      font-size: 11px;
-                                      fill: #666666;
-                                    "
-                                    text-anchor="end"
-                                    transform="translate(0,0) rotate(-45 0 -9999)"
-                                    y="-9999"
-                                  >
-                                    23-08-2019
-                                  </text>
-                                  <text
-                                    x="0"
-                                    style="
-                                      color: #666666;
-                                      cursor: default;
-                                      font-size: 11px;
-                                      fill: #666666;
-                                    "
-                                    text-anchor="end"
-                                    transform="translate(0,0) rotate(-45 0 -9999)"
-                                    y="-9999"
-                                  >
-                                    26-08-2019
-                                  </text>
-                                  <text
-                                    x="259.3982804199029"
-                                    style="
-                                      color: #666666;
-                                      cursor: default;
-                                      font-size: 11px;
-                                      fill: #666666;
-                                    "
-                                    text-anchor="end"
-                                    transform="translate(0,0) rotate(-45 259.3982804199029 235)"
-                                    y="235"
-                                    opacity="1"
-                                  >
-                                    07-09-2019
-                                  </text>
-                                  <text
-                                    x="0"
-                                    style="
-                                      color: #666666;
-                                      cursor: default;
-                                      font-size: 11px;
-                                      fill: #666666;
-                                    "
-                                    text-anchor="end"
-                                    transform="translate(0,0) rotate(-45 0 -9999)"
-                                    y="-9999"
-                                  >
-                                    20-09-2019
-                                  </text>
-                                  <text
-                                    x="0"
-                                    style="
-                                      color: #666666;
-                                      cursor: default;
-                                      font-size: 11px;
-                                      fill: #666666;
-                                    "
-                                    text-anchor="end"
-                                    transform="translate(0,0) rotate(-45 0 -9999)"
-                                    y="-9999"
-                                  >
-                                    30-09-2019
-                                  </text>
-                                  <text
-                                    x="0"
-                                    style="
-                                      color: #666666;
-                                      cursor: default;
-                                      font-size: 11px;
-                                      fill: #666666;
-                                    "
-                                    text-anchor="end"
-                                    transform="translate(0,0) rotate(-45 0 -9999)"
-                                    y="-9999"
-                                  >
-                                    15-10-2019
-                                  </text>
-                                  <text
-                                    x="0"
-                                    style="
-                                      color: #666666;
-                                      cursor: default;
-                                      font-size: 11px;
-                                      fill: #666666;
-                                    "
-                                    text-anchor="end"
-                                    transform="translate(0,0) rotate(-45 0 -9999)"
-                                    y="-9999"
-                                  >
-                                    25-10-2019
-                                  </text>
-                                  <text
-                                    x="444.6760581976829"
-                                    style="
-                                      color: #666666;
-                                      cursor: default;
-                                      font-size: 11px;
-                                      fill: #666666;
-                                    "
-                                    text-anchor="end"
-                                    transform="translate(0,0) rotate(-45 444.6760581976829 235)"
-                                    y="235"
-                                    opacity="1"
-                                  >
-                                    13-11-2019
-                                  </text>
-                                  <text
-                                    x="0"
-                                    style="
-                                      color: #666666;
-                                      cursor: default;
-                                      font-size: 11px;
-                                      fill: #666666;
-                                    "
-                                    text-anchor="end"
-                                    transform="translate(0,0) rotate(-45 0 -9999)"
-                                    y="-9999"
-                                  >
-                                    10-12-2019
-                                  </text>
-                                  <text
-                                    x="0"
-                                    style="
-                                      color: #666666;
-                                      cursor: default;
-                                      font-size: 11px;
-                                      fill: #666666;
-                                    "
-                                    text-anchor="end"
-                                    transform="translate(0,0) rotate(-45 0 -9999)"
-                                    y="-9999"
-                                  >
-                                    14-12-2019
-                                  </text>
-                                  <text
-                                    x="0"
-                                    style="
-                                      color: #666666;
-                                      cursor: default;
-                                      font-size: 11px;
-                                      fill: #666666;
-                                    "
-                                    text-anchor="end"
-                                    transform="translate(0,0) rotate(-45 0 -9999)"
-                                    y="-9999"
-                                  >
-                                    26-12-2019
-                                  </text>
-                                  <text
-                                    x="0"
-                                    style="
-                                      color: #666666;
-                                      cursor: default;
-                                      font-size: 11px;
-                                      fill: #666666;
-                                    "
-                                    text-anchor="end"
-                                    transform="translate(0,0) rotate(-45 0 -9999)"
-                                    y="-9999"
-                                  >
-                                    07-01-2020
-                                  </text>
-                                  <text
-                                    x="629.9538359754629"
-                                    style="
-                                      color: #666666;
-                                      cursor: default;
-                                      font-size: 11px;
-                                      fill: #666666;
-                                    "
-                                    text-anchor="end"
-                                    transform="translate(0,0) rotate(-45 629.9538359754629 235)"
-                                    y="235"
-                                    opacity="1"
-                                  >
-                                    09-01-2020
-                                  </text>
-                                  <text
-                                    x="0"
-                                    style="
-                                      color: #666666;
-                                      cursor: default;
-                                      font-size: 11px;
-                                      fill: #666666;
-                                    "
-                                    text-anchor="end"
-                                    transform="translate(0,0) rotate(-45 0 -9999)"
-                                    y="-9999"
-                                  >
-                                    19-01-2020
-                                  </text>
-                                  <text
-                                    x="0"
-                                    style="
-                                      color: #666666;
-                                      cursor: default;
-                                      font-size: 11px;
-                                      fill: #666666;
-                                    "
-                                    text-anchor="end"
-                                    transform="translate(0,0) rotate(-45 0 -9999)"
-                                    y="-9999"
-                                  >
-                                    04-05-2020
-                                  </text>
-                                </g>
-                                <g
-                                  class="highcharts-axis-labels highcharts-yaxis-labels"
-                                  data-z-index="7"
-                                >
-                                  <text
-                                    x="38"
-                                    style="
-                                      color: #666666;
-                                      cursor: default;
-                                      font-size: 11px;
-                                      fill: #666666;
-                                    "
-                                    text-anchor="end"
-                                    transform="translate(0,0)"
-                                    y="223"
-                                    opacity="1"
-                                  >
-                                    25k
-                                  </text>
-                                  <text
-                                    x="38"
-                                    style="
-                                      color: #666666;
-                                      cursor: default;
-                                      font-size: 11px;
-                                      fill: #666666;
-                                    "
-                                    text-anchor="end"
-                                    transform="translate(0,0)"
-                                    y="181"
-                                    opacity="1"
-                                  >
-                                    50k
-                                  </text>
-                                  <text
-                                    x="38"
-                                    style="
-                                      color: #666666;
-                                      cursor: default;
-                                      font-size: 11px;
-                                      fill: #666666;
-                                    "
-                                    text-anchor="end"
-                                    transform="translate(0,0)"
-                                    y="139"
-                                    opacity="1"
-                                  >
-                                    75k
-                                  </text>
-                                  <text
-                                    x="38"
-                                    style="
-                                      color: #666666;
-                                      cursor: default;
-                                      font-size: 11px;
-                                      fill: #666666;
-                                    "
-                                    text-anchor="end"
-                                    transform="translate(0,0)"
-                                    y="98"
-                                    opacity="1"
-                                  >
-                                    100k
-                                  </text>
-                                  <text
-                                    x="38"
-                                    style="
-                                      color: #666666;
-                                      cursor: default;
-                                      font-size: 11px;
-                                      fill: #666666;
-                                    "
-                                    text-anchor="end"
-                                    transform="translate(0,0)"
-                                    y="56"
-                                    opacity="1"
-                                  >
-                                    125k
-                                  </text>
-                                  <text
-                                    x="38"
-                                    style="
-                                      color: #666666;
-                                      cursor: default;
-                                      font-size: 11px;
-                                      fill: #666666;
-                                    "
-                                    text-anchor="end"
-                                    transform="translate(0,0)"
-                                    y="14"
-                                    opacity="1"
-                                  >
-                                    150k
-                                  </text>
-                                </g>
-                                <g
-                                  class="highcharts-label highcharts-tooltip highcharts-color-0"
-                                  style="
-                                    pointer-events: none;
-                                    white-space: nowrap;
-                                  "
-                                  data-z-index="8"
-                                  transform="translate(552,69)"
-                                  opacity="1"
-                                  visibility="visible"
-                                >
-                                  <path
-                                    fill="none"
-                                    class="highcharts-label-box highcharts-tooltip-box highcharts-shadow"
-                                    d="M 5.5 0.5 L 146.5 0.5 C 151.5 0.5 151.5 0.5 151.5 5.5 L 151.5 29.5 C 151.5 34.5 151.5 34.5 146.5 34.5 L 80.5 34.5 74.5 40.5 68.5 34.5 5.5 34.5 C 0.5 34.5 0.5 34.5 0.5 29.5 L 0.5 5.5 C 0.5 0.5 0.5 0.5 5.5 0.5"
-                                    stroke="#000000"
-                                    stroke-opacity="0.049999999999999996"
-                                    stroke-width="5"
-                                    transform="translate(1, 1)"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    class="highcharts-label-box highcharts-tooltip-box highcharts-shadow"
-                                    d="M 5.5 0.5 L 146.5 0.5 C 151.5 0.5 151.5 0.5 151.5 5.5 L 151.5 29.5 C 151.5 34.5 151.5 34.5 146.5 34.5 L 80.5 34.5 74.5 40.5 68.5 34.5 5.5 34.5 C 0.5 34.5 0.5 34.5 0.5 29.5 L 0.5 5.5 C 0.5 0.5 0.5 0.5 5.5 0.5"
-                                    stroke="#000000"
-                                    stroke-opacity="0.09999999999999999"
-                                    stroke-width="3"
-                                    transform="translate(1, 1)"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    class="highcharts-label-box highcharts-tooltip-box highcharts-shadow"
-                                    d="M 5.5 0.5 L 146.5 0.5 C 151.5 0.5 151.5 0.5 151.5 5.5 L 151.5 29.5 C 151.5 34.5 151.5 34.5 146.5 34.5 L 80.5 34.5 74.5 40.5 68.5 34.5 5.5 34.5 C 0.5 34.5 0.5 34.5 0.5 29.5 L 0.5 5.5 C 0.5 0.5 0.5 0.5 5.5 0.5"
-                                    stroke="#000000"
-                                    stroke-opacity="0.15"
-                                    stroke-width="1"
-                                    transform="translate(1, 1)"
-                                  ></path>
-                                  <path
-                                    fill="#fff"
-                                    class="highcharts-label-box highcharts-tooltip-box"
-                                    d="M 5.5 0.5 L 146.5 0.5 C 151.5 0.5 151.5 0.5 151.5 5.5 L 151.5 29.5 C 151.5 34.5 151.5 34.5 146.5 34.5 L 80.5 34.5 74.5 40.5 68.5 34.5 5.5 34.5 C 0.5 34.5 0.5 34.5 0.5 29.5 L 0.5 5.5 C 0.5 0.5 0.5 0.5 5.5 0.5"
-                                    stroke="#ffbb97"
-                                    stroke-width="1"
-                                  ></path>
-                                </g>
-                                <g
-                                  class="highcharts-label highcharts-tooltip highcharts-color-0"
-                                  style="
-                                    pointer-events: none;
-                                    white-space: nowrap;
-                                  "
-                                  data-z-index="8"
-                                  transform="translate(1,29)"
-                                  opacity="1"
-                                  visibility="visible"
-                                >
-                                  <path
-                                    fill="none"
-                                    class="highcharts-label-box highcharts-tooltip-box highcharts-shadow"
-                                    d="M 5.5 0.5 L 148.5 0.5 C 153.5 0.5 153.5 0.5 153.5 5.5 L 153.5 29.5 C 153.5 34.5 153.5 34.5 148.5 34.5 L 76.5 34.5 70.5 40.5 64.5 34.5 5.5 34.5 C 0.5 34.5 0.5 34.5 0.5 29.5 L 0.5 5.5 C 0.5 0.5 0.5 0.5 5.5 0.5"
-                                    stroke="#000000"
-                                    stroke-opacity="0.049999999999999996"
-                                    stroke-width="5"
-                                    transform="translate(1, 1)"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    class="highcharts-label-box highcharts-tooltip-box highcharts-shadow"
-                                    d="M 5.5 0.5 L 148.5 0.5 C 153.5 0.5 153.5 0.5 153.5 5.5 L 153.5 29.5 C 153.5 34.5 153.5 34.5 148.5 34.5 L 76.5 34.5 70.5 40.5 64.5 34.5 5.5 34.5 C 0.5 34.5 0.5 34.5 0.5 29.5 L 0.5 5.5 C 0.5 0.5 0.5 0.5 5.5 0.5"
-                                    stroke="#000000"
-                                    stroke-opacity="0.09999999999999999"
-                                    stroke-width="3"
-                                    transform="translate(1, 1)"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    class="highcharts-label-box highcharts-tooltip-box highcharts-shadow"
-                                    d="M 5.5 0.5 L 148.5 0.5 C 153.5 0.5 153.5 0.5 153.5 5.5 L 153.5 29.5 C 153.5 34.5 153.5 34.5 148.5 34.5 L 76.5 34.5 70.5 40.5 64.5 34.5 5.5 34.5 C 0.5 34.5 0.5 34.5 0.5 29.5 L 0.5 5.5 C 0.5 0.5 0.5 0.5 5.5 0.5"
-                                    stroke="#000000"
-                                    stroke-opacity="0.15"
-                                    stroke-width="1"
-                                    transform="translate(1, 1)"
-                                  ></path>
-                                  <path
-                                    fill="#fff"
-                                    class="highcharts-label-box highcharts-tooltip-box"
-                                    d="M 5.5 0.5 L 148.5 0.5 C 153.5 0.5 153.5 0.5 153.5 5.5 L 153.5 29.5 C 153.5 34.5 153.5 34.5 148.5 34.5 L 76.5 34.5 70.5 40.5 64.5 34.5 5.5 34.5 C 0.5 34.5 0.5 34.5 0.5 29.5 L 0.5 5.5 C 0.5 0.5 0.5 0.5 5.5 0.5"
-                                    stroke="#ffbb97"
-                                    stroke-width="1"
-                                  ></path>
-                                </g>
-                                <g
-                                  class="highcharts-label highcharts-tooltip highcharts-color-0"
-                                  style="
-                                    pointer-events: none;
-                                    white-space: nowrap;
-                                  "
-                                  data-z-index="8"
-                                  transform="translate(187,51)"
-                                  opacity="1"
-                                  visibility="visible"
-                                >
-                                  <path
-                                    fill="none"
-                                    class="highcharts-label-box highcharts-tooltip-box highcharts-shadow"
-                                    d="M 5.5 0.5 L 209.5 0.5 C 214.5 0.5 214.5 0.5 214.5 5.5 L 214.5 29.5 C 214.5 34.5 214.5 34.5 209.5 34.5 L 112.5 34.5 106.5 40.5 100.5 34.5 5.5 34.5 C 0.5 34.5 0.5 34.5 0.5 29.5 L 0.5 5.5 C 0.5 0.5 0.5 0.5 5.5 0.5"
-                                    stroke="#000000"
-                                    stroke-opacity="0.049999999999999996"
-                                    stroke-width="5"
-                                    transform="translate(1, 1)"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    class="highcharts-label-box highcharts-tooltip-box highcharts-shadow"
-                                    d="M 5.5 0.5 L 209.5 0.5 C 214.5 0.5 214.5 0.5 214.5 5.5 L 214.5 29.5 C 214.5 34.5 214.5 34.5 209.5 34.5 L 112.5 34.5 106.5 40.5 100.5 34.5 5.5 34.5 C 0.5 34.5 0.5 34.5 0.5 29.5 L 0.5 5.5 C 0.5 0.5 0.5 0.5 5.5 0.5"
-                                    stroke="#000000"
-                                    stroke-opacity="0.09999999999999999"
-                                    stroke-width="3"
-                                    transform="translate(1, 1)"
-                                  ></path>
-                                  <path
-                                    fill="none"
-                                    class="highcharts-label-box highcharts-tooltip-box highcharts-shadow"
-                                    d="M 5.5 0.5 L 209.5 0.5 C 214.5 0.5 214.5 0.5 214.5 5.5 L 214.5 29.5 C 214.5 34.5 214.5 34.5 209.5 34.5 L 112.5 34.5 106.5 40.5 100.5 34.5 5.5 34.5 C 0.5 34.5 0.5 34.5 0.5 29.5 L 0.5 5.5 C 0.5 0.5 0.5 0.5 5.5 0.5"
-                                    stroke="#000000"
-                                    stroke-opacity="0.15"
-                                    stroke-width="1"
-                                    transform="translate(1, 1)"
-                                  ></path>
-                                  <path
-                                    fill="#fff"
-                                    class="highcharts-label-box highcharts-tooltip-box"
-                                    d="M 5.5 0.5 L 209.5 0.5 C 214.5 0.5 214.5 0.5 214.5 5.5 L 214.5 29.5 C 214.5 34.5 214.5 34.5 209.5 34.5 L 112.5 34.5 106.5 40.5 100.5 34.5 5.5 34.5 C 0.5 34.5 0.5 34.5 0.5 29.5 L 0.5 5.5 C 0.5 0.5 0.5 0.5 5.5 0.5"
-                                    stroke="#ffbb97"
-                                    stroke-width="1"
-                                  ></path>
-                                </g>
-                              </svg>
-                              <div
-                                class="highcharts-label highcharts-tooltip highcharts-color-0"
-                                style="
-                                  position: absolute;
-                                  left: 552px;
-                                  top: 69px;
-                                  opacity: 1;
-                                  pointer-events: none;
-                                  visibility: visible;
-                                "
-                              >
-                                <span
-                                  data-z-index="1"
-                                  style="
-                                    position: absolute;
-                                    font-family: 'Lucida Grande',
-                                      'Lucida Sans Unicode', Arial, Helvetica,
-                                      sans-serif;
-                                    font-size: 12px;
-                                    white-space: nowrap;
-                                    color: rgb(51, 51, 51);
-                                    cursor: default;
-                                    margin-left: 0px;
-                                    margin-top: 0px;
-                                    left: 8px;
-                                    top: 8px;
-                                  "
-                                  ><span
-                                    class="product-price-chart-tooltip product-price-chart-tooltip-min"
-                                    >Giá thấp nhất:
-                                    <b class="product-price-min"
-                                      >85,000₫</b
-                                    ></span
-                                  ></span
-                                >
-                              </div>
-                              <div
-                                class="highcharts-label highcharts-tooltip highcharts-color-0"
-                                style="
-                                  position: absolute;
-                                  left: 1px;
-                                  top: 29px;
-                                  opacity: 1;
-                                  pointer-events: none;
-                                  visibility: visible;
-                                "
-                              >
-                                <span
-                                  data-z-index="1"
-                                  style="
-                                    position: absolute;
-                                    font-family: 'Lucida Grande',
-                                      'Lucida Sans Unicode', Arial, Helvetica,
-                                      sans-serif;
-                                    font-size: 12px;
-                                    white-space: nowrap;
-                                    color: rgb(51, 51, 51);
-                                    cursor: default;
-                                    margin-left: 0px;
-                                    margin-top: 0px;
-                                    left: 8px;
-                                    top: 8px;
-                                  "
-                                  ><span
-                                    class="product-price-chart-tooltip product-price-chart-tooltip-max"
-                                    >Giá cao nhất:
-                                    <b class="product-price-max"
-                                      >109,000₫</b
-                                    ></span
-                                  ></span
-                                >
-                              </div>
-                              <div
-                                class="highcharts-label highcharts-tooltip highcharts-color-0"
-                                style="
-                                  position: absolute;
-                                  left: 187px;
-                                  top: 51px;
-                                  opacity: 1;
-                                  pointer-events: none;
-                                  visibility: visible;
-                                "
-                              >
-                                <span
-                                  data-z-index="1"
-                                  style="
-                                    position: absolute;
-                                    font-family: 'Lucida Grande',
-                                      'Lucida Sans Unicode', Arial, Helvetica,
-                                      sans-serif;
-                                    font-size: 12px;
-                                    white-space: nowrap;
-                                    color: rgb(51, 51, 51);
-                                    cursor: default;
-                                    margin-left: 0px;
-                                    margin-top: 0px;
-                                    left: 8px;
-                                    top: 8px;
-                                  "
-                                  ><span class="product-price-chart-tooltip"
-                                    >Giá ngày <b>13-11-2019</b> là
-                                    <b>92,000₫</b></span
-                                  ></span
-                                >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div id="to" class="bg-white shadow-sm rounded p-4 mb-4">
-                      <h5 class="mb-3 text-gray-900">Theo dõi giá sản phẩm</h5>
+                      <div class="coupon-deal-detail-main-body p-4">
+                        <h3 class="col-md-11 pr-lg-5 mb-3 text-gray-900">
+                          Giày sneaker nữ 💖FREESHIP💖 [GIAY NU] Giày thể thao
+                          nữ CV cổ thấp
+                        </h3>
+                        <h6
+                          class="coupon-deal-detail-main-body-p font-weight-light pr-lg-5 text-secondary"
+                        >
+                          Sản phẩm này trên
+                          <b class="text-warning">Shopee</b> có giá
+                          <b class="text-warning">265,500₫</b>
+                          (cập nhật 4 phút trước).
+                        </h6>
 
-                      <form
-                        class="row align-items-start bg-white mt-3 mb-3 ml-1 mr-1 p-3"
-                        style=""
-                      >
-                        <div class="col-auto mb-3">
-                          <h6>Theo dõi sản phẩm này</h6>
-                          <div class="form-check form-check-inline">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              id="checkActive"
-                              value="true"
-                            /><label class="form-check-label" for="checkActive"
-                              >Kích hoạt</label
-                            >
-                          </div>
-                        </div>
-                        <div class="col-auto mb-3">
-                          <h6>Thông báo khi</h6>
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="radio"
-                              name="notiWhen"
-                              id="down_below"
-                              value="down_below"
-                              checked=""
-                            /><label class="form-check-label" for="down_below"
-                              >Giá nhỏ hơn<input
-                                type="number"
-                                class="mb-2 form-control form-control-sm"
-                                placeholder="Nhập giá mong đợi"
-                                value="230000"
-                            /></label>
-                          </div>
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="radio"
-                              name="notiWhen"
-                              id="down"
-                              value="down"
-                            /><label class="form-check-label" for="down"
-                              >Giá giảm</label
-                            >
-                          </div>
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="radio"
-                              name="notiWhen"
-                              id="any"
-                              value="any"
-                            /><label class="form-check-label" for="any"
-                              >Giá tăng và giảm</label
-                            >
-                          </div>
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="radio"
-                              name="notiWhen"
-                              id="available"
-                              value="available"
-                            /><label class="form-check-label" for="available"
-                              >Khi có hàng</label
-                            >
-                          </div>
-                        </div>
-                        <div class="col-auto mb-3">
-                          <h6>Thông báo qua</h6>
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              name="notiMethod"
-                              id="email"
-                              value="email"
-                            /><label class="form-check-label" for="email"
-                              >Email yenluutru02@gmail.com</label
-                            >
-                          </div>
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              name="notiMethod"
-                              id="messaging"
-                              value="messaging"
-                            /><label class="form-check-label" for="messaging"
-                              >Push notification
-                            </label>
-                          </div>
-                        </div>
-                        <div class="col-auto"></div>
-                      </form>
+                        <h6
+                          class="coupon-deal-detail-main-body-p font-weight-light pr-lg-5 text-secondary"
+                        >
+                          Tính từ ngày <b class="text-warning">29-01-2019</b>,
+                          giá thấp nhất của mặt hàng là
+                          <b class="text-danger">186,000₫</b>, cao nhất
+                          <b class="text-success">267,000₫</b>
+                        </h6>
+                        <h6
+                          class="coupon-deal-detail-main-body-p font-weight-light pr-lg-5 text-secondary"
+                        >
+                          <b class="text-gray-900">Kết luận: </b> Sản phẩm này
+                          là
+                          <span class="badge badge-pill badge-danger"
+                            >Sale ảo</span
+                          >
+                        </h6>
+                        <h6
+                          class="coupon-deal-detail-main-body-p font-weight-light pr-lg-5 text-secondary"
+                        >
+                          Hãy cùng đào sâu Lịch sử giá của sản phẩm này sẽ hiểu
+                          chi tiết nhé!
+                        </h6>
+                      </div>
+                    </div>
+                    <div
+                      class="custom-nav coupon-deal-detail-main-footer bg-white border-top d-flex align-items-center px-4"
+                    >
+                      <p class="mb-3 mt-3 font-weight-light text-gray-500">
+                        <i class="icofont-users-alt-4 text-danger mr-2"></i>
+                        yenmai477@gmail.com
+                        <i class="ml-4 icofont-clock-time text-danger mr-2"></i>
+                        Cập nhật: 15 phút trước
+                      </p>
+                      <span class="ml-auto">
+                        <button
+                          type="button"
+                          class="btn btn-primary btn-sm shadow-sm"
+                        >
+                          Tới nơi bán
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End product Infomation -->
+
+              <!-- Begin price tracker -->
+              <div class="row">
+                <div class="col-xl-8 col-sm-12">
+                  <div class="bg-white shadow-sm rounded mb-4">
+                    <h5 class="mb-4 pt-4 pl-4 pr-4 text-gray-900">
+                      Lịch sử giá
+                    </h5>
+                    <div class="" id="">
+                      <div class="m-5">
+                        <canvas id="myChart"></canvas>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-xl-4 col-sm-12">
-                  <div class="bg-white shadow-sm rounded mb-4"></div>
-                  <div class="bg-white shadow-sm rounded mb-4"></div>
+                  <div class="bg-white shadow-sm rounded p-4 mb-4">
+                    <h5 class="mb-4 text-gray-900">Review giá</h5>
+                    <p>
+                      Một vài điều thứ vị cho sản phẩm của bạn:
+                    </p>
+                    <ul class="dot-list">
+                      <li>
+                        Độ dài của lịch sử giá sản phẩm: 15 tháng. (Lịch sử giá
+                        càng dài sẽ càng tốt)
+                      </li>
+                      <li>
+                        Có 5 lần thay đổi giá.
+                      </li>
+                      <li>Giá sản phẩm vừa giảm</li>
+                      <li>Giá sản phẩm đang Ở GẦN MỨC CAO NHẤT.</li>
+                      <li class="text-warning">
+                        Giá vừa giảm bớt rồi, có lẽ nên chờ. Trừ khi đây sản
+                        phẩm siêu Hot thì mới cân nhắc mua.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- End price tracker -->
+              <!-- Begin subscribe product -->
+              <div class="row">
+                <div id="to" class="col-12 bg-white shadow-sm rounded p-4 mb-4">
+                  <h5 class="mb-3 text-gray-900">Theo dõi giá sản phẩm</h5>
+
+                  <form
+                    class="align-items-start bg-white mt-3 mb-3 ml-1 mr-1 p-3"
+                  >
+                    <div class="row">
+                      <div class="offset-md-1 col-md-3 mb-3">
+                        <h6>Theo dõi sản phẩm này:</h6>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <h6>Thông báo khi</h6>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="notiWhen"
+                            id="down_below"
+                            value="down_below"
+                          />
+                          <label class="form-check-label" for="down_below"
+                            >Giá nhỏ hơn<input
+                              type="number"
+                              class="mb-2 form-control form-control-sm"
+                              placeholder="Nhập giá mong đợi"
+                              value="230000"
+                            />
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="notiWhen"
+                            id="down"
+                            value="down"
+                            checked
+                          /><label class="form-check-label" for="down"
+                            >Giá giảm</label
+                          >
+                        </div>
+
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="notiWhen"
+                            id="available"
+                            value="available"
+                          /><label class="form-check-label" for="available"
+                            >Khi có hàng</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <h6>Thông báo qua</h6>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="notiMethod"
+                            id="email"
+                            value="email"
+                            checked
+                          /><label class="form-check-label" for="email"
+                            >Email yenluutru02@gmail.com</label
+                          >
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="notiMethod"
+                            id="messaging"
+                            value="messaging"
+                            checked
+                          /><label class="form-check-label" for="messaging"
+                            >Push notification
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="offset-md-10">
+                        <button class="btn btn-primary">Xác nhận</button>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -1771,26 +370,14 @@
                     class="d-flex align-items-center justify-content-between"
                   >
                     <p class="m-0 text-secondary">
-                      Copyright © Your Website 2020
+                      Bản quyền © thuộc về Warchest 2020
                     </p>
                     <p class="m-0">
-                      <a
-                        href="file:///C:/Users/yenma/OneDrive/Desktop/askbootstrap.com/askbootstrap.com/preview/osahan-deel/without-sidebar/coupan-details.html#"
-                        class="text-secondary"
-                        >About Us</a
-                      >
+                      <a href="#" class="text-secondary">Trang chủ</a> &nbsp; ·
+                      &nbsp;
+                      <a href="#" class="text-secondary">Về chúng tôi</a>
                       &nbsp; · &nbsp;
-                      <a
-                        href="file:///C:/Users/yenma/OneDrive/Desktop/askbootstrap.com/askbootstrap.com/preview/osahan-deel/without-sidebar/coupan-details.html#"
-                        class="text-secondary"
-                        >Privacy Policy</a
-                      >
-                      &nbsp; · &nbsp;
-                      <a
-                        href="file:///C:/Users/yenma/OneDrive/Desktop/askbootstrap.com/askbootstrap.com/preview/osahan-deel/without-sidebar/coupan-details.html#"
-                        class="text-secondary"
-                        >Terms &amp; Conditions</a
-                      >
+                      <a href="#" class="text-secondary"> Trợ giúp</a>
                     </p>
                   </div>
                 </div>
@@ -1805,117 +392,25 @@
     <!-- End of Content Wrapper -->
     <!-- End of Page Wrapper -->
     <!-- Scroll to Top Button-->
-    <a
-      class="scroll-to-top rounded-circle"
-      href="file:///C:/Users/yenma/OneDrive/Desktop/askbootstrap.com/askbootstrap.com/preview/osahan-deel/without-sidebar/coupan-details.html#page-top"
-      style="display: none;"
-    >
+    <a class="scroll-to-top rounded-circle" href="#page-top">
       <i class="fas fa-angle-up"></i>
     </a>
-    <!-- Logout Modal-->
-    <div
-      class="modal fade"
-      id="logoutModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-            <button
-              class="close"
-              type="button"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            Select "Logout" below if you are ready to end your current session.
-          </div>
-          <div class="modal-footer">
-            <button
-              class="btn btn-secondary"
-              type="button"
-              data-dismiss="modal"
-            >
-              Cancel
-            </button>
-            <a
-              class="btn btn-primary"
-              href="file:///C:/Users/yenma/OneDrive/Desktop/askbootstrap.com/askbootstrap.com/preview/osahan-deel/without-sidebar/login.html"
-              >Logout</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
+
     <!-- Bootstrap core JavaScript -->
-    <script src="./product-detail_files/jquery.min.js.download"></script>
-    <script src="./product-detail_files/bootstrap.bundle.min.js.download"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Core plugin JavaScript-->
-    <script src="./product-detail_files/jquery.easing.min.js.download"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- select2 Js -->
-    <script src="./product-detail_files/select2.min.js.download"></script>
+    <script src="vendor/select2/js/select2.min.js"></script>
     <!-- Owl Carousel -->
-    <script src="./product-detail_files/owl.carousel.js.download"></script>
+    <script src="vendor/owl-carousel/owl.carousel.js"></script>
     <!-- Custom -->
-    <script src="./product-detail_files/custom.js.download"></script>
-    <!-- Code injected by live-server -->
-    <script type="text/javascript">
-      // <![CDATA[  <-- For SVG support
-      if ("WebSocket" in window) {
-        (function () {
-          function refreshCSS() {
-            var sheets = [].slice.call(document.getElementsByTagName("link"));
-            var head = document.getElementsByTagName("head")[0];
-            for (var i = 0; i < sheets.length; ++i) {
-              var elem = sheets[i];
-              var parent = elem.parentElement || head;
-              parent.removeChild(elem);
-              var rel = elem.rel;
-              if (
-                (elem.href && typeof rel != "string") ||
-                rel.length == 0 ||
-                rel.toLowerCase() == "stylesheet"
-              ) {
-                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
-                elem.href =
-                  url +
-                  (url.indexOf("?") >= 0 ? "&" : "?") +
-                  "_cacheOverride=" +
-                  new Date().valueOf();
-              }
-              parent.appendChild(elem);
-            }
-          }
-          var protocol =
-            window.location.protocol === "http:" ? "ws://" : "wss://";
-          var address =
-            protocol + window.location.host + window.location.pathname + "/ws";
-          var socket = new WebSocket(address);
-          socket.onmessage = function (msg) {
-            if (msg.data == "reload") window.location.reload();
-            else if (msg.data == "refreshcss") refreshCSS();
-          };
-          if (
-            sessionStorage &&
-            !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
-          ) {
-            console.log("Live reload enabled.");
-            sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
-          }
-        })();
-      } else {
-        console.error(
-          "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
-        );
-      }
-      // ]]>
-    </script>
+    <script src="js/custom.js"></script>
+
+    <!-- Chartjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+    <script src="js/product-detail.js"></script>
   </body>
 </html>
